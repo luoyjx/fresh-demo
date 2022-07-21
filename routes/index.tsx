@@ -15,8 +15,19 @@ export default function Home() {
         Welcome to `fresh`. Try update this message in the ./routes/index.tsx
         file, and refresh.
       </p>
-      <p>hello world</p>
-      <Counter start={3} />
+      <div>
+        <span>The Counter</span>
+        <Counter start={3} />
+      </div>
+
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/about">About Page</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/countdown">Countdown Page</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/search">Search Page</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/jack">Dynamic Name Page (`jack` is the name param)</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/github/luoyjx">Dynamic Github User Page (`luoyjx` is the username param)</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/greet/bob">Dynamic Greet To Name Page (`bob` is the name param)</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/api/joke">The Joke API return random joke</a></p>
+      <p class={tw`leading-8`}><a class={tw`underline text-blue-400`} href="/api/random-uuid">The Random uuid API</a></p>
     </div>
   );
 }
